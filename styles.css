@@ -5,51 +5,47 @@ body {
   height: 100vh;
   background-color: #f4f4f9;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
 }
 
 .card {
-  background: white;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 500px;
-  height: 300px;
+  height: 300x;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   gap: 50px;
   box-sizing: border-box;
 }
 
 h1 {
-  text-align: center;
   color: #333;
-  margin-bottom: 20px; /* Ajuste para espaçamento entre o título e o campo de senha */
 }
 
 .password-container {
   position: relative;
-  width: 100%; /* Garante que o contêiner se ajuste ao tamanho do card */
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-input[type="password"],
-input[type="text"] {
-  /* Aplica estilo para ambos tipos de input */
+#password {
   width: 100%;
   padding: 10px;
-  padding-right: 40px; /* Espaço para o ícone de olho */
   font-size: 16px;
   border: 2px solid #ddd;
   border-radius: 5px;
-  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+  box-sizing: border-box;
 }
 
-i {
+#togglePassword {
   position: absolute;
   right: 10px;
-  top: calc(50% - 7px); /* Centraliza verticalmente o ícone */
+  top: calc(50% - 7px);
   cursor: pointer;
-  color: #666; /* Cor do ícone */
+  color: #666;
 }
